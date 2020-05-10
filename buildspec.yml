@@ -7,3 +7,10 @@ phases:
     commands:
       - pip install -r requirements.txt
       - pytest
+  build:
+    commands:
+      - zip hello_user.zip hello_user.py
+  post_build:
+    commands:
+      - aws lambda update-function-code --function-name=hello_user --zip-file=fileb://hello_user.zip
+      - aws lambda publish-version --function-name hello_user
