@@ -25,7 +25,7 @@ code, however small, is added to the codebase. This way, if a log of changes is 
 control systems like GitHub, an error could be traced back to the exact change when it happened. <br>
 
 Github flow is one of the common methodologies to do CI.
-![github_flow](github_flow.png)<br>
+![github_flow](Images/github_flow.png)<br>
 Usually a developer, when adding a new feature to a project follows the following steps under PR approach:
 <ol>
 <li>Download the updated Master Branch in Github. This branch is the main codebase for a project
@@ -86,7 +86,7 @@ When the checks pass the package is automatically deployed to production.<br>
 In the deployment phase, the package is opened and reviewed with a system
 of automated checks. If the checks fail the package is rejected.
 When the checks pass the package is automatically deployed to production.
-![CD Diagram](cd_diagram.png)
+![CD Diagram](Images/cd_diagram.png)
 <br>
 Following are the practices of CD:
 <ul>
@@ -211,8 +211,8 @@ The build spec config has been explained in depth at [buildspec.yml explained](#
 Finally after this detailed configurations, we click 'Create build project'.
 To test the build, click 'Start Build' with timeout '0' hour and '5' minutes.
 The reports and logs validate the successful build of project.
-![Build Success 1](CodeBuild_Source_BuildSuccess.png)
-![Build Success 2](CodeBuild_SuccessfulBuild.jpg)
+![Build Success 1](Images/CodeBuild_Source_BuildSuccess.png)
+![Build Success 2](Images/CodeBuild_SuccessfulBuild.jpg)
 ***
 
 
