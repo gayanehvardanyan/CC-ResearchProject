@@ -2,4 +2,5 @@ import json
 
 
 def hello_user_handler(event, context):
-    return {"statusCode": 200, "body": json.dumps({"message": "Hello user!"})}
+    username = event["queryStringParameters"]["user"]
+    return {"statusCode": 200, "body": json.dumps({"message": f"Hello {username}!"})}
